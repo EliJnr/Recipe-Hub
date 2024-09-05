@@ -1,0 +1,43 @@
+.profile-box {
+    width: 60%;
+    margin-left: 5%;
+    padding-top: 5px;
+}
+.profile-box h1 {
+    text-transform: capitalize;
+    font-family: "Monserrat",sans-serif;
+    color: #7ed386;
+    font-size: 1.8rem;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.profile-box h2 {
+    display: flex;
+    color: #777;
+    font-family: "Roboto",sans-serif;
+    text-transform: uppercase;
+    font-size: .9rem;
+    letter-spacing: 1px;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+.profile-box .input {
+    display: flex;
+    flex-direction: column;
+    border: 0;
+    border-bottom: 1px solid #3fb6a8;
+    width: 80%;
+    font-family: "Montserrat",sans-serif;
+    font-size: .95em;
+    padding: 7px 0px;
+    color: #070707;
+    outline: none;
+}
+
+.profile-box textarea {
+    max-width: 80%;
+    height: 90px;
+    max-height: 90px;
+    border-top: 1px solid #3fb6a8;
+} 

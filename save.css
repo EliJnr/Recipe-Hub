@@ -1010,12 +1010,7 @@ button.save-button:hover {
 button.save-button i {
     margin-left: 7px;
 }
-  /* Responsive adjustment */
-  @media (max-width: 768px) {
-    .input-row {
-      flex-direction: column; /* Stack inputs vertically on smaller screens */
-    }
-  }
+  
   
   
   

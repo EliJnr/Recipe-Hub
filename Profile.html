@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Profile.css">
+    <link rel="stylesheet" href="https://fonts.google.com/icons?selected=Material+Symbols+Outlined:settings:FILL@0;wght@400;GRAD@0;opsz@24&icon.size=24&icon.color=%23e8eaed">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="profile-header">
+            <div class="profile-image">
+                <img src="photo_2024-08-29_19-52-10.jpg" width="200" alt="Profile Image">
+                <i class="fa fa-camera"></i>
+            </div>
+            <div class="profile-nav-info">
+                <h3 class="user-name">Gershwin Bokordedzi</h3>
+                <div class="address">
+                    <p class="state"> Accra</p>
+                    <span class="country"> Ghana</span>
+                </div>
+            </div>
+            <div class="profile-option">
+                <div class="notification">
+                    <i class="fa fa-bell"></i>
+                    <span class="alert-message">1</span>
+                </div>
+            </div>
+        </div>
+        <div class="main-body">
+            <div class="left-side">
+                <div class="profile-side">
+                    <p class="mobile-number"><i class="fa fa-phone"></i>0505702355</p>
+                    <p class="user-mail">
+                        <i class="fa fa-envelope"></i>yhung@gmail.com
+                    </p>
+                    <div class="user-bio">
+                        <h3>Bio</h3>
+                        <p class="bio">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, nemo? A officia nam dolore nihil praesentium totam autem, rem, vitae laborum libero recusandae voluptatibus nostrum ducimus ea porro nisi laboriosam.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam iusto eaque voluptatum dicta harum. Accusamus labore autem impedit, sed quidem nemo laborum voluptas, inventore, eligendi odio voluptatem voluptatibus explicabo sit!
+                        </p>
+                    </div>
+                    <div class="profile-button">
+                        <button class="chat-button"><i class="fa fa-comment"></i>Message</button>
+                        <button class="create-button">
+                            <i></i>Follow 
+                        </button>
+                    </div>
+                    <div class="user-rating">
+                        <h3 class="rating"></h3>
+                        <div class="rate">
+                            <div class="stars">
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            </div>
+                            <span class="no-user">
+                                <span></span>&nbsp; &nbsp; 
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Tabs-->
+            <div class="right-side">
+                <div class="nav">
+                    <ul>
+                        <li onclick="tabs(0)" class="user-post active">Post</li>
+                        <li onclick="tabs(1)" class="user-recipe ">Saved Recipe</li>
+                        <li onclick="tabs(2)" class="user-information ">Personal Info</li>
+                    </ul>
+                </div>
+                <div class="right-container">
+                <div class="profile-body">
+                    <div class="profile-posts tab">
+                        <h1>Your Posts</h1>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum, corrupti minima iusto expedita quis culpa recusandae consequatur temporibus quaerat reiciendis vero optio labore at beatae molestias! Mollitia praesentium inventore deserunt. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore deleniti magnam error eum consectetur aliquid nihil, quas assumenda magni voluptas sit, ipsam architecto modi distinctio doloremque, dolor mollitia commodi perferendis! Perspiciatis ullam aut nulla dolorum esse veritatis quaerat non, quod voluptate enim cum corrupti debitis dignissimos eius illum corporis sunt atque consequuntur tenetur facere minima necessitatibus amet consectetur! Aspernatur tempora dolores animi similique assumenda alias officiis qui, libero vero consectetur.</p>
+                    </div>
+                    <div class="profile-review tab">
+                        <h1>Saved</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus odit, quas incidunt temporibus culpa, modi ullam similique expedita, voluptatem nemo nesciunt laudantium. Ab asperiores minus ad sunt quos laboriosam expedita nam dolor delectus dicta saepe ex molestiae quas, at aperiam natus alias voluptatum iure quibusdam itaque hic. Fugit quod nesciunt odit fuga dolorem voluptatem ad obcaecati asperiores voluptate, accusamus deserunt doloribus molestias itaque vitae blanditiis est officia recusandae vero? Vitae?</p>
+                        </div>
+                        <div class="profile-information tab" >
+                            <div class="profile-box">
+                                <h1>Personal Info</h1>
+                                <h2 class="label">Username</h2> 
+                                <input type="text" class="input" placeholder="Username">
+                                <h2 class="label name">Name</h2>
+                                <input type="text" class="input" placeholder="Name">
+                                <h2 class="label gender">Gender</h2> 
+                                <input type="text" class="input" placeholder="Gender">
+                                <h2 class="label bio">Bio</h2> 
+                                <textarea class="input" placeholder="Bio"></textarea>    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="Profile.js"></script>
+</body>
+</html>

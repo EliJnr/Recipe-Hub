@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log Out  - Recipe Hub</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:400,900|Montserrat|Roboto');
+
+body{
+  background: #EAFF7B;
+  overflow-x: hidden;
+  margin: 20px;
+}
+
+.container{
+  background: white;
+  width: 500px;
+  height: 380px;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 10%;
+  box-shadow: 2px 5px 20px rgba(119,119,119,.5);
+}
+
+
+.rightbox{
+  width: 60%;
+  margin-left: 18%;
+  padding-top: 5px;
+}
+
+
+h1{
+  font-family: "Montserrat", sans-serif;
+  color: #7ed386;
+  font-size: 1.2rem;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+h2{
+  color: #777;
+  font-family: "Roboto",sans-serif;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  margin-left: 2px;
+  margin-top: 20px;
+}
+
+.input, p {
+  border: 0;
+  border-bottom: 1px solid #3fb6a8;
+  width: 90%;
+  font-family: 'montserrat', sans-serif;
+  font-size: .9rem;
+  padding: 7px 0;
+  color: #070707;
+  outline: none;
+}
+
+
+.btn,
+.btn1
+{
+  font-family: "roboto" sans-serif;
+  text-transform: uppercase;
+  font-size: 15px;
+  border: 0;
+  color: #fff;
+  background: #7ed386;
+  padding: 7px 15px;
+  box-shadow: 0px 2px 4px 0px rgba(0,0,0,.2);
+  cursor: pointer;
+  margin-top: 25px;
+  border-radius: 4px;
+}
+
+.btn1{
+    margin-left: 125px;
+    color: #2ed573;
+    background: white;
+}
+
+.btn:hover{
+    transform: scale(1.1);
+}
+
+
+.btn1:hover{
+    transform: scale(1.1);
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="leftbox">
+           
+        </div>
+        <div class="rightbox">
+            <h1>Log Out</h1>
+            <p>Are you sure you want to log out from Recipe Hub?<br>
+                You will be required to log in again to access your saved recipes, preferences, and profile.
+                 If you log out now, unsaved changes may be lost.</p>
+            <button class="btn">LogOut</button>
+             <button class="btn1">Cancel</button>
+        </div>
+    </div>
+
+
+
+
+
+
+
+<script>
+  // Back to previous page
+document.addEventListener('DOMContentLoaded', () => {
+    const arrow = document.querySelector('.leftbox .fa-arrow-circle-left');
+    
+    if (arrow) {
+        arrow.addEventListener('click', () => {
+            window.history.back();
+        });
+    }
+});
+</script>
+</body>
+</html>

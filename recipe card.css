@@ -1,0 +1,115 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.recipe-card {
+    display: flex;
+    max-width: 900px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    flex-direction: row;
+}
+
+.recipe-media {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.recipe-media img {
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.video-container {
+    padding: 10px;
+}
+
+.video-container video {
+    width: 100%;
+    display: block;
+   
+}
+
+.recipe-content {
+    padding: 20px;
+    flex: 1;
+}
+
+.recipe-title {
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.recipe-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.recipe-info div {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.recipe-info .material-icons {
+    font-size: 20px;
+    margin-right: 8px;
+    color: #555;
+}
+
+.tags {
+    margin-bottom: 20px;
+}
+
+.tags span {
+    display: inline-block;
+    background-color: #f0f0f0;
+    color: #555;
+    padding: 5px 10px;
+    margin-right: 10px;
+    border-radius: 15px;
+    font-size: 14px;
+}
+
+.category {
+    background-color: #ffcc80;
+    color: #333;
+}
+
+.dietary {
+    background-color: #c5e1a5;
+    color: #333;
+}
+
+.ingredients, .directions, .notes {
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+ul, ol {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.notes p {
+    font-size: 14px;
+    color: #555;
+}

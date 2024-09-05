@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - Recipe Hub</title>
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+
+
+    <div class="container">
+        <div class="leftbox">
+            <nav>
+                <a onclick="tabs(0)" class="tab active">
+                    <i class="fa fa-user"></i>
+                </a>
+                <a onclick="tabs(1)" class="tab">
+                    <i class="fa fa-shield"></i>
+                </a>
+                <a onclick="tabs(2)" class="tab">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <a onclick="tabs(3)" class="tab">
+                    <i class="fa fa-users"></i>
+                </a>
+            </nav>
+        </div>
+        <div class="rightbox">
+            <div class="account tabShow">
+                <h1>Account Settings</h1>
+                <h2>Password</h2>
+                <p>Change Password <a href="change.html"><button class="button">Change</button></a></p>
+                <h2>Email</h2>
+                <p>Manage Email <a href="email.html"><button class="button">Update</button></a></p>
+                <h2>Contact</h2>
+                <p>Update Contact <a href="contact.html"><button class="button">Update</button></a></p>
+                <h2>Account</h2>
+                <p>Delete Account <a href="delete.html"><button class="button">Delete</button></a></p>
+            </div>
+            <div class="privacy tabShow">
+                <h1>Privacy Info</h1>
+                <h1>Recipes</h1>
+                <h2>Public</h2>
+                <p style="display: flex; align-items: center;">All users (including those who aren’t logged in) can view the user's recipes.
+                    <input type="radio" class="radio" value="" style="margin-left: 20px;">
+               </p>
+               <h2>Private</h2>
+               <p style="display: flex; align-items: center;"> Only users who are connected to the person (e.g., friends or followers) can see their recipes.  
+                   <input type="radio" class="radio" value="" style="margin-left: 20px;">
+              </p>
+              <h1>Profile</h1>
+              <h2>Public</h2>
+              <p style="display: flex; align-items: center;">Anyone can view the user's profile, including their bio, profile picture, and any other public information.
+                  <input type="radio" class="radio" value="" style="margin-left: 20px;">
+             </p>
+             <h2>Private</h2>
+             <p style="display: flex; align-items: center;"> Only users who are connected to the person (e.g., friends or followers) can view profile.  
+                 <input type="radio" class="radio" value="" style="margin-left: 20px;">
+            </p>
+            </div>
+            <div class="preference tabShow">
+                <h1>App Preference</h1>
+                <button class="btn">Update</button>
+            </div>
+            <div class="about tabShow">
+                <h1>About Us</h1>
+                <p>Welcome to Recipe Hub – your ultimate destination for culinary creativity
+                    , inspiration, and community!<br>
+                    At Recipe Hub, we believe that cooking is more than just preparing meals;
+                     it's a way to connect, explore cultures, and create memorable experiences.<br>
+                     <br>
+                      Founded on the passion for sharing delicious recipes and fostering a love for food,
+                       our mission is to bring together home cooks, food enthusiasts, 
+                       and professional chefs from around the world.,<br> 
+                       <br>
+                       Our Vision:
+                       We envision a world where everyone has access to delicious,
+                        nutritious, and easy-to-make recipes that bring joy to their tables.
+                         By fostering a supportive and inclusive environment,
+                          Recipe Hub aims to inspire creativity in the kitchen
+                           and make cooking a delightful part of everyday life.<br>
+                           <br>
+                       Join Us:
+                       Whether you're a seasoned chef, a budding home cook, or someone who simply loves good food,
+                        Recipe Hub welcomes you. Dive into our collection, share your culinary creations,
+                         and be part of a community that celebrates the art of cooking together.<br>
+                         <br>
+                       Thank you for being a part of Recipe Hub. 
+                       Let's cook, share, and savor the wonderful journey of food together!</p>
+            </div>
+           
+        </div>
+    </div>
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+    const tabBtn = document.querySelectorAll(".tab");
+    const tab = document.querySelectorAll(".tabShow");
+
+    function tabs(panelIndex) {
+        tab.forEach(function(node) {
+            node.style.display = "none";
+        });
+        tab[panelIndex].style.display = "block"
+        
+    }
+    tabs(0)
+</script>
+<script>
+    $(".tab").click(function() {
+        $(this).addClass("active").siblings()
+        .removeClass('active')
+    })
+</script>
+</body>
+</html>

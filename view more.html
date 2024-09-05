@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View More - Recipe Hub</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:400,900|Montserrat|Roboto');
+
+body{
+  background: linear-gradient(to right, #2ed573, #f9ca24);
+  overflow-x: hidden;
+}
+
+.container{
+  background: white;
+  width: 79%;
+  height: 550px;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 4%;
+  margin-bottom: 2%;
+  box-shadow: 2px 5px 20px rgba(119,119,119,.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  
+}
+
+.leftbox{
+  float: left;
+  top: 7%;
+  left: 4%;
+  position: absolute;
+  width: 30%;
+  height: 39%;
+  background: white;
+  box-shadow: 2px 5px 20px rgba(119,119,119,.5);
+  border: .1em solid #fff;
+  border-radius: 6px;
+}
+
+.recipe-media img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.rightbox{
+  width: 60%;
+  margin-left: 35%;
+  padding-top: 5px;
+ 
+}
+
+.recipe-card {
+  float: left;
+  top: 50%;
+  left: 4%;
+  position: absolute;
+  width: 30%;
+  height: 39%;
+  background: white;
+  box-shadow: 2px 5px 20px rgba(119,119,119,.5);
+  border: .1em solid #fff;
+}
+
+
+.recipe-content {
+    padding: 20px;
+    flex: 1;
+}
+
+.recipe-title {
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.recipe-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.recipe-info div {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.recipe-info .material-icons {
+    font-size: 20px;
+    margin-right: 8px;
+    color: #555;
+}
+
+.tags {
+    margin-bottom: 20px;
+}
+
+.tags span {
+    display: inline-block;
+    background-color: #f0f0f0;
+    color: #555;
+    padding: 5px 10px;
+    margin-right: 10px;
+    border-radius: 15px;
+    font-size: 14px;
+}
+
+.category {
+    background-color: #ffcc80;
+    color: #333;
+}
+
+.dietary {
+    background-color: #c5e1a5;
+    color: #333;
+}
+
+.ingredients, .directions, .notes {
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+ul, ol {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.notes p {
+    font-size: 14px;
+    color: #555;
+}
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="leftbox">
+            <div class="recipe-media">
+                <img src="https://img.freepik.com/free-photo/top-view-table-full-delicious-food-composition_23-2149141353.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1724889600&semt=ais_hybrid" alt="Pumpkin Soup">
+            </div>
+        </div>
+        <div class="rightbox">
+            <div class="recipe-content">
+                <div class="recipe-card">
+                    <h1 class="recipe-title">Pumpkin Soup</h1>
+                    <div class="recipe-info">
+                        <div class="servings">
+                            <span class="material-icons">restaurant</span>
+                            4 servings
+                        </div>
+                        <div class="time">
+                            <span class="material-icons">schedule</span>
+                            30 minutes
+                        </div>
+                    </div>
+                    <div class="tags">
+                        <span class="category">Soup</span>
+                        <span class="dietary">Vegetarian</span>
+                        <span class="dietary">Gluten-Free</span>
+                    </div>
+                </div>
+                <div class="ingredients">
+                    <h2>Ingredients</h2>
+                    <ul>
+                        <li>500 ml milk</li>
+                        <li>50 g butter</li>
+                        <li>3 eggs</li>
+                        <li>1 tbsp cocoa</li>
+                        <li>2 tsp baking soda</li>
+                        <li>A pinch of salt</li>
+                    </ul>
+                </div>
+                <div class="directions">
+                    <h2>Directions</h2>
+                    <ol>
+                        <li>Heat the milk in a saucepan.</li>
+                        <li>Add the butter and stir until melted.</li>
+                        <li>Beat the eggs in a bowl.</li>
+                        <li>Slowly add the eggs to the milk, stirring continuously.</li>
+                        <li>Add the cocoa, baking soda, and salt.</li>
+                        <li>Simmer until thickened.</li>
+                    </ol>
+                </div>
+                <div class="notes">
+                    <h2>Notes</h2>
+                    <p>Serve with bread for a complete meal.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

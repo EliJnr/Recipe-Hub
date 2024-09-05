@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reset Password - Recipe Hub</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:400,900|Montserrat|Roboto');
+
+body{
+  background: linear-gradient(to right, #2ed573, #f9ca24);
+  overflow-x: hidden;
+}
+
+.container{
+  background: white;
+  width: 600px;
+  height: 300px;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 10%;
+  box-shadow: 2px 5px 20px rgba(119,119,119,.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.rightbox{
+  width: 60%;
+  margin-left: 15%;
+  padding-top: 5px;
+ 
+}
+
+h1{
+  font-family: "Montserrat", sans-serif;
+  color: #7ed386;
+  font-size: 1.5rem;
+  margin-top: 10px;
+  margin-bottom: 60px;
+}
+
+input{
+  border: 0;
+  border-bottom: 1px solid #3fb6a8;
+  width: 70%;
+  font-family: 'montserrat', sans-serif;
+  font-size: 1.0em;
+  padding: 10px;
+  color: #070707;
+  outline: none;
+  margin-bottom: 10px;
+}
+
+button{
+  width: 40%;
+  font-family: "roboto" sans-serif;
+  text-transform: uppercase;
+  font-size: 15px;
+  border-radius: 8px;
+  color: #fff;
+  background: #7ed386;
+  padding:7px;
+  box-shadow: 0px 2px 4px 0px rgba(0,0,0,.2);
+  cursor: pointer;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="rightbox">
+            <h1>Reset Password</h1>
+            <form action="/u/reset/${token}" method="post"> 
+                    <input type="password" name="password" placeholder="Enter Your Password" required>
+                    <button type="submit">Reset Password</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

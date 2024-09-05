@@ -1,0 +1,66 @@
+/* Sidebar Responsiveness */
+@media screen and (max-width: 768px) {
+    .sidebar {
+        width: 60px;
+    }
+
+    .sidebar .text {
+        display: none;
+    }
+
+    .sidebar li .icon {
+        min-width: 40px;
+        font-size: 18px;
+    }
+
+    .sidebar header .toggle {
+        right: -20px;
+    }
+    
+    .all-section {
+        left: 60px;
+        width: calc(100% - 60px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .sidebar {
+        width: 50px;
+    }
+
+    .sidebar .text {
+        display: none;
+    }
+
+    .sidebar li .icon {
+        min-width: 30px;
+        font-size: 16px;
+    }
+
+    .all-section {
+        left: 50px;
+        width: calc(100% - 50px);
+    }
+}
+
+
+/* Global Responsiveness */
+@media screen and (max-width: 1024px) {
+    .all-section {
+        width: 100%;
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .all-section {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .all-section {
+        width: 100%;
+        padding: 0 10px;
+    }
+}
